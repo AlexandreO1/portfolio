@@ -1,15 +1,75 @@
 body{
     background-color: rgba(15, 14, 38, 0.937);
+    background-image: url(/img/photo_mimi-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    
 }
 
-header p {
+.gray-transparent{
+    color: #b9c0bfac;
+}
+
+.font-ocr{
+    font-family: 'OCR A Std', sans-serif;
+}
+
+.bluegreen{
     color: #12D0A5 ;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.presentation{
+    margin: 1%;
+}
+
+.button{
+    border: #12D0A5 solid 1px;
+    padding: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-color: #12D0A5;
+    background-color: rgba(15, 14, 38, 0.937);
+    color: #12D0A5;
+    transition: transform 0.3s;
+}
+
+.button:hover{
+    font-family: 'OCR A Std', sans-serif;
+    border: #12D0A5 solid 3px;
+    font-weight: bolder;
+    /* color: rgba(15, 14, 38, 0.937); */
+}
+
+.button:active{
+    transform: translateY(2px);
+    border-color: #12D0A5;
+    background-color: #12D0A5;
+    color: rgba(15, 14, 38, 0.937);
+}
 #name{
     color: #cacccc;
 }
 
-#desc{
-    color: #b9c0bfac;
+
+.diplomes{
+    margin: 1%;
+    display: inline-block;
+    border: solid 1px #12D0A5;
+    padding: 7px;
+    padding-right: 15px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.project{
+    margin: 1%;
+    display: inline-block;
+    border: #12D0A5 solid 1px;
+    padding: 10px;
 }
