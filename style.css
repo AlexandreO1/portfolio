@@ -1,33 +1,162 @@
-body{
+body {
     background-color: rgba(15, 14, 38, 0.937);
-    background-image: url(/img/photo_mimi-removebg-preview.png);
+    /* background-image: url(/img/photo_mimi-removebg-preview.png); */
     background-repeat: no-repeat;
     background-position: center bottom;
     background-attachment: fixed;
-    
+    max-width: 100%;
 }
 
-.gray-transparent{
+.container-diplomes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo{
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 480px){
+    .container-fluid{
+        width: 100% !important;
+    }
+    .presentation{
+        width: 98%;
+        text-align: center;
+    }
+    .contact{
+        width: 98%;
+        margin-bottom: 50px;
+    }
+    .project {
+        width: 96% !important; /* Modifier la largeur à 100% */
+        display: block; /* Modifier display en block */
+        text-align: center;
+    }
+
+    #photo{
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+
+@media(max-width: 768px){
+    .contact{
+        margin-bottom: 10%;
+    }
+
+    .presentation{
+        text-align: center;
+        margin-bottom: 50%;
+    }
+
+    #photo{
+        width: 40%;
+    }
+    .project{
+        text-align: center;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px) {
+    .parent{
+        display:flex;
+        justify-content: center;
+    }
+    #photo{
+        margin-left: 5%;
+        width: 20%;
+    }
+    #accroche{
+        text-align: center;
+    }
+    .container{
+        margin-top: 3%;
+        text-align: left;
+    }
+    #description{
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+    }
+    .project{
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px){
+    .parent{
+        display:flex;
+        justify-content: center;
+    }
+    #photo{
+        margin-left: 3%;
+        width: 15%;
+    }
+    #accroche{
+        text-align: center;
+    }
+    .container{
+        margin-top: 2%;
+        text-align: left;
+    }
+    #description{
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+    }
+    .project{
+        width: 80%;
+        text-align: center;
+    }
+}
+.gray-transparent {
     color: #b9c0bfac;
 }
 
-.font-ocr{
+.font-ocr {
     font-family: 'OCR A Std', sans-serif;
 }
 
-.bluegreen{
-    color: #12D0A5 ;
+.bluegreen {
+    color: #12D0A5;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.presentation{
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone {
+    align-self: flex-end;
+}
+
+
+.presentation {
     margin: 1%;
 }
 
-.button{
+.button {
     border: #12D0A5 solid 1px;
     padding: 7px;
     padding-right: 10px;
@@ -36,28 +165,28 @@ body{
     border-color: #12D0A5;
     background-color: rgba(15, 14, 38, 0.937);
     color: #12D0A5;
-    transition: transform 0.3s;
+    transition: transform 0.1s;
+    font-family: 'OCR A Std', sans-serif;
 }
 
-.button:hover{
-    font-family: 'OCR A Std', sans-serif;
+.button:hover {
     border: #12D0A5 solid 3px;
     font-weight: bolder;
     /* color: rgba(15, 14, 38, 0.937); */
 }
 
-.button:active{
-    transform: translateY(2px);
+.button:active {
+    transform: translateY(3px);
     border-color: #12D0A5;
     background-color: #12D0A5;
     color: rgba(15, 14, 38, 0.937);
 }
-#name{
+
+#name {
     color: #cacccc;
 }
 
-
-.diplomes{
+.diplomes {
     margin: 1%;
     display: inline-block;
     border: solid 1px #12D0A5;
@@ -67,9 +196,9 @@ body{
     text-align: right;
 }
 
-.project{
+.project {
     margin: 1%;
     display: inline-block;
     border: #12D0A5 solid 1px;
-    padding: 10px;
+    padding: 1%;
 }
