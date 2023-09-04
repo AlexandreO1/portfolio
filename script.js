@@ -20,9 +20,6 @@ function toggleGame(event) {
   var game = document.getElementById(target);
   if (game.style.display === "none") {
     game.style.display = "block";
-    game.style.width = "100%"; 
-    game.style.height = "500px";
-    game.style.margin = "0 auto"; 
   } else {
     game.style.display = "none";
   }
