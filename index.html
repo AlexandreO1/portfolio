@@ -1,111 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.cdnfonts.com/css/ocr-a-std" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/ocr-a-std" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Mon Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="contact">
-        <div class="cv-email">
-            <a href="img/Alexandre Oualid.pdf" rel="noopener noreferrer" download><button class="button">Mon
-                    CV</button></a>
-            <a href="mailto:alexandre.oualid@laposte.net" class="bluegreen">alexandre.oualid@laposte.net</a>
-        </div>
-        <div class="phone">
-            <a href="tel:+330622406711" class="bluegreen">+33 06 22 40 67 11</a>
-        </div>
+      <div class="cv-email">
+        <a href="img/Alexandre Oualid.pdf" rel="noopener noreferrer" download
+          ><button class="button">Mon CV</button></a
+        >
+        <a href="mailto:alexandre.oualid@laposte.net" class="bluegreen"
+          >alexandre.oualid@laposte.net</a
+        >
+      </div>
+      <div class="phone">
+        <a href="tel:+330622406711" class="bluegreen">+33 06 22 40 67 11</a>
+      </div>
     </div>
 
     <div class="presentation">
-        <div class="parent">
-            <div class="container">
-                <p class="bluegreen font-ocr">Bonjour, je m'appelle</p>
-                <h1 id="name">Alexandre Oualid.</h1>
-            </div>
-            <img id="photo" src="img/photo mimi.png" alt="Photo de moi">
+      <div class="parent">
+        <div class="container">
+          <p class="bluegreen font-ocr">Bonjour, je m'appelle</p>
+          <h1 id="name">Alexandre Oualid.</h1>
         </div>
-        <h1 class="gray-transparent" id="accroche">Je construis des choses pour le web.</h1>
-        <p class="gray-transparent font-ocr" id="description">Je suis développeur web à la <span class="bluegreen">web@academie</span>,
-            sérieux et autonome, toujours curieux de nouvelles <span class="bluegreen">technologies</span>, je saurai
-            répondre aux besoins du client et de l'entreprise.</p>
+        <img id="photo" src="img/photo mimi.png" alt="Photo de moi" />
+      </div>
+      <h1 class="gray-transparent" id="accroche">
+        Je construis des choses pour le web.
+      </h1>
+      <p class="gray-transparent font-ocr" id="description">
+        Je suis développeur web à la
+        <span class="bluegreen">web@academie</span>, sérieux et autonome,
+        toujours curieux de nouvelles
+        <span class="bluegreen">technologies</span>, je saurai répondre aux
+        besoins du client et de l'entreprise.
+      </p>
     </div>
 
     <div class="container-diplomes">
-        <div class="diplomes">
-            <p class="gray-transparent">Formation : <span class="bluegreen font-ocr">Web@cademie</span> </p>
-            <p class="bluegreen font-ocr">Bac +2</p>
-            <p class="bluegreen font-ocr">HTML CSS</p>
-            <p class="bluegreen font-ocr">PHP | JAVASCRIPT</p>
-            <p class="bluegreen font-ocr">REACT</p>
-            <p class="bluegreen font-ocr">Symfony | Laravel</p>
-            <p class="bluegreen font-ocr">Anglais B2/C1</p>
-        </div>
+      <div class="diplomes">
+        <p class="gray-transparent">
+          Formation : <span class="bluegreen font-ocr">Web@cademie</span>
+        </p>
+        <p class="bluegreen font-ocr">Bac +2</p>
+        <p class="bluegreen font-ocr">HTML CSS</p>
+        <p class="bluegreen font-ocr">PHP | JAVASCRIPT</p>
+        <p class="bluegreen font-ocr">REACT</p>
+        <p class="bluegreen font-ocr">Symfony | Laravel</p>
+        <p class="bluegreen font-ocr">Anglais B2/C1</p>
+      </div>
     </div>
-    <br>
+    <br />
     <div class="container-fluid">
+      <div class="project" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="bluegreen font-ocr">Morpion :</h3>
+        <p class="font-ocr gray-transparent">
+          Un jeu de morpion que j'ai développé, amusez-vous !
+        </p>
+        <div class="container text-center">
+          <button class="button" data-target="morpion">Jouer</button>
+        </div>
+        <div class="screen">
+          <iframe
+            id="morpion"
+            src="https://alexandreo1.github.io/morpion/"
+            frameborder="0"
+            style="width: 100%; height: 500px; margin: 0; display: none"
+          ></iframe>
+        </div>
+      </div>
 
-        <div class="project" data-aos="fade-up" data-aos-delay="300">
-            <h3 class="bluegreen font-ocr">Morpion :</h3>
-            <p class="font-ocr gray-transparent">Un jeu de morpion que j'ai développé, amusez-vous !</p>
-            <div class="container text-center">
-                <button class="button" data-target="morpion">Jouer</button>
-            </div>
-            <div class="screen">
-                <iframe id="morpion" src="https://alexandreo1.github.io/morpion/" frameborder="0"
-                    style="max-width: 98%; margin: 0px; display: none;"></iframe>
-            </div>
-        </div>        
-        <br>
-        <div class="project" data-aos="fade-up" data-aos-delay="300">
-            <h3 class="bluegreen font-ocr">My Cinema :</h3>
-            <p class="font-ocr gray-transparent">Découverte de l'utilisation de PHP avec MySQL avec une database déjà
-                créée. J'ai dû reproduire les fonctionnalités d'une page d'accueil de site de cinéma.</p>
-            <div class="container text-center">
-                <button class="button" data-target="mycinema">Voir</button>
-            </div>
-            <div class="screen">
-                <img id="mycinema" src="/img/mycinema screen.png" alt="Screen de mon projet my cinema"
-                    style="max-width: 98%; margin: 1%; display: none;">
-            </div>
+      <br />
+      <div class="project" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="bluegreen font-ocr">My Cinema :</h3>
+        <p class="font-ocr gray-transparent">
+          Découverte de l'utilisation de PHP avec MySQL avec une database déjà
+          créée. J'ai dû reproduire les fonctionnalités d'une page d'accueil de
+          site de cinéma.
+        </p>
+        <div class="container text-center">
+          <button class="button" data-target="mycinema">Voir</button>
         </div>
-        <br>
-        <div class="project" data-aos="fade-up" data-aos-delay="300">
-            <h3 class="bluegreen font-ocr">My Meetic :</h3>
-            <p class="font-ocr gray-transparent">Projet de 2 semaines pour reproduire les fonctionnalités d'un site de
-                rencontre en s'inspirant légèrement de meetic en utilisant PHP avec MySQL avec cette fois une database
-                créée
-                moi-même.</p>
-            <div class="container text-center">
-                <button class="button" data-target="mymeetic">Voir</button>
-            </div>
-            <div class="screen">
-                <img id="mymeetic" src="/img/mymeetic screen.png" alt="Screen de mon projet MyMeetic"
-                    style="max-width: 98%; margin: 1%; display: none;">
-            </div>
+        <div class="screen">
+          <img
+            id="mycinema"
+            src="/img/mycinema screen.png"
+            alt="Screen de mon projet my cinema"
+            style="max-width: 98%; margin: 1%; display: none"
+          />
         </div>
-        <br>
-        <div class="project" data-aos="fade-up" data-aos-delay="300">
-            <h3 class="bluegreen font-ocr">Framework CSS :</h3>
-            <p class="font-ocr gray-transparent">Découverte du framework Boostrap, j'ai reproduit le framework et
-                reproduit
-                ses mécanismes afin de mieux le comprendre.</p>
-            <div class="container text-center">
-                <button class="button" data-target="frameworkcss">Voir</button>
-            </div>
-            <div class="screen">
-                <img id="frameworkcss" src="img/frameworkcss screen.png" alt="Screen de mon projet frameworkcss"
-                    style="max-width: 98%; margin: 1%; display: none;">
-            </div>
+      </div>
+      <br />
+      <div class="project" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="bluegreen font-ocr">My Meetic :</h3>
+        <p class="font-ocr gray-transparent">
+          Projet de 2 semaines pour reproduire les fonctionnalités d'un site de
+          rencontre en s'inspirant légèrement de meetic en utilisant PHP avec
+          MySQL avec cette fois une database créée moi-même.
+        </p>
+        <div class="container text-center">
+          <button class="button" data-target="mymeetic">Voir</button>
         </div>
-        <br>
-        <!-- <div class="project" data-aos="fade-up" data-aos-delay="300">
+        <div class="screen">
+          <img
+            id="mymeetic"
+            src="/img/mymeetic screen.png"
+            alt="Screen de mon projet MyMeetic"
+            style="max-width: 98%; margin: 1%; display: none"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="project" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="bluegreen font-ocr">Framework CSS :</h3>
+        <p class="font-ocr gray-transparent">
+          Découverte du framework Boostrap, j'ai reproduit le framework et
+          reproduit ses mécanismes afin de mieux le comprendre.
+        </p>
+        <div class="container text-center">
+          <button class="button" data-target="frameworkcss">Voir</button>
+        </div>
+        <div class="screen">
+          <img
+            id="frameworkcss"
+            src="img/frameworkcss screen.png"
+            alt="Screen de mon projet frameworkcss"
+            style="max-width: 98%; margin: 1%; display: none"
+          />
+        </div>
+      </div>
+      <br />
+      <!-- <div class="project" data-aos="fade-up" data-aos-delay="300">
             <h3 class="bluegreen font-ocr">Twitter Academie :</h3>
             <p class="font-ocr gray-transparent">Projet en groupe de 4 consistant à reproduire twitter et ses
                 fonctionnalités en créant une database commune à toute la classe (40 personnes) sur une durée de 1 mois.
@@ -114,39 +147,49 @@
                 <button class="button">Voir</button>
             </div>
         </div> -->
-        <br>
-        <div class="project" data-aos="fade-up" data-aos-delay="300">
-            <h3 class="bluegreen font-ocr">Puissance 4 :</h3>
-            <p class="font-ocr gray-transparent">2 semaines de projet pour créer un jeu puissance 4 en javascript avec
-                un
-                système de points et une petite touche perso, le projet a commencé en parallèle avec le projet Twitter
-                de 1
-                mois</p>
-            <div class="container text-center">
-                <button class="button" data-target="puissance4">Voir</button>
-            </div>
-            <div class="screen">
-                <img id="puissance4" src="img/puissance4 screen.png" alt="Screen de mon projet Puissance4"
-                    style="max-width: 98%; margin: 1%; display: none;">
-            </div>
+      <br />
+      <div class="project" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="bluegreen font-ocr">Puissance 4 :</h3>
+        <p class="font-ocr gray-transparent">
+          2 semaines de projet pour créer un jeu puissance 4 en javascript avec
+          un système de points et une petite touche perso, le projet a commencé
+          en parallèle avec le projet Twitter de 1 mois
+        </p>
+        <div class="container text-center">
+          <button class="button" data-target="puissance4">Voir</button>
         </div>
-        <br>
-        <div class="project" data-aos="fade-up" data-aos-delay="300">
-            <h3 class="bluegreen font-ocr">Battleship :</h3>
-            <p class="font-ocr gray-transparent">Projet de 1 semaine assez différent des autres, cette fois j'ai dû
-                reprendre un code reproduisant le jeu battleship en javascript qui était rempli d'erreurs de toutes
-                sorte
-                avec pour objectif de tout debug pour le faire marcher parfaitement.</p>
-            <div class="container text-center">
-                <button class="button" data-target="battleship">Voir</button>
-            </div>
-            <div class="screen">
-                <img id="battleship" src="img/battleship screen.png" alt="Screen de mon projet battleship"
-                    style="max-width: 98%; margin: 1%; display: none;">
-            </div>
+        <div class="screen">
+          <img
+            id="puissance4"
+            src="img/puissance4 screen.png"
+            alt="Screen de mon projet Puissance4"
+            style="max-width: 98%; margin: 1%; display: none"
+          />
         </div>
-        <br>
-        <!-- <div class="project" data-aos="fade-up" data-aos-delay="300">
+      </div>
+      <br />
+      <div class="project" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="bluegreen font-ocr">Battleship :</h3>
+        <p class="font-ocr gray-transparent">
+          Projet de 1 semaine assez différent des autres, cette fois j'ai dû
+          reprendre un code reproduisant le jeu battleship en javascript qui
+          était rempli d'erreurs de toutes sorte avec pour objectif de tout
+          debug pour le faire marcher parfaitement.
+        </p>
+        <div class="container text-center">
+          <button class="button" data-target="battleship">Voir</button>
+        </div>
+        <div class="screen">
+          <img
+            id="battleship"
+            src="img/battleship screen.png"
+            alt="Screen de mon projet battleship"
+            style="max-width: 98%; margin: 1%; display: none"
+          />
+        </div>
+      </div>
+      <br />
+      <!-- <div class="project" data-aos="fade-up" data-aos-delay="300">
             <h3 class="bluegreen font-ocr">Quizz :</h3>
             <p class="font-ocr gray-transparent">Découverte de Symfony dans un projet de 1 semaine en groupe de 3
                 consistant
@@ -159,8 +202,7 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>

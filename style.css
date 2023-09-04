@@ -13,6 +13,16 @@ body {
     align-items: center;
 }
 
+.morpion-project {
+    text-align: center;
+    padding: 20px;
+}
+
+.morpion-project iframe {
+    margin: 0 auto;
+    display: block;
+}
+
 #photo{
     max-width: 50%;
     border-radius: 50%;
